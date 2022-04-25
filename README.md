@@ -62,14 +62,14 @@ pederson commitment和证明能够证明输入和输出关系，相对于pederso
     如果直接选择若干个一次性地址构成环，进行环签名，则起不到隐藏发送方的作用，因为每个一次性地址拥有的pederson commitment不一样，
     很容易根据pederson commitment找出环中实际的发送方，所以环签名失效
         
-   ### 改进1:
+   ### 点1:
 ![image](https://user-images.githubusercontent.com/39479965/165031253-a93ef2c2-a788-48ec-99ef-b765a30ed792.png)  
  发送方计算得到zG, 并以z作为私钥，zG作为公钥，并计算其他成员的公钥（无法得知其私钥），如下图红色区域，并以红色区域
  构成一个环进行环签名  
 ![image](https://user-images.githubusercontent.com/39479965/165031383-850b0cc3-fc9e-4efb-93ac-3548d4c7d630.png)
      
-  但改进1 依然存在问题，如果只是以红色区域构成环，那么发送方每次选择不同盲化因子，那么key_images（关联标签）也会变化，不能抵制双花
-   ### 改进2: 再上原来的密钥，一起构成环（完美！！！）
+  但点1 依然存在问题，如果只是以红色区域构成环，那么发送方每次选择不同盲化因子，那么key_images（关联标签）也会变化，不能抵制双花
+   ### 点2: 再上原来的密钥，一起构成环（完美！！！）
    ![image](https://user-images.githubusercontent.com/39479965/165033237-dbec5332-5f70-47bd-b795-ee9e5360d654.png)
 
      
