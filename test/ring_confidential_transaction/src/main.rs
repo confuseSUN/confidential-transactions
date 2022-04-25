@@ -12,8 +12,8 @@ fn main() {
     let ring_size = wait_for_number("请输入环成员个数(2到20之间的整数): ", 2, 20);
 
     let input_size = wait_for_number(
-        "环机密支持多输入，请输入\"输入交易总数量\"(2到100之间的整数): ",
-        2,
+        "环机密支持多输入，请输入\"输入交易总数量\"(1到100之间的整数): ",
+        1,
         100,
     );
     let mut input_amount = Vec::with_capacity(input_size);
