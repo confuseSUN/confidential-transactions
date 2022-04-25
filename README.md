@@ -45,7 +45,7 @@ pederson commitment和证明能够证明输入和输出关系，相对于pederso
   
      
    ## demo2： 环机密性交易 （cargo run -p ring_confidential_transaction）
-  环机密性交易主要实现以下两个机密性：
+  环机密性交易主要实现以下三个机密性：
    1. 隐藏交易金额
    2. 保护接收方地址  
    3. 保护接收方地址
