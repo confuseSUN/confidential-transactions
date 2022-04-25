@@ -1,0 +1,14 @@
+[package]
+name = "ct_token"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+curve25519-dalek = { package = "curve25519-dalek-ng", version = "4", default-features = false, features = ["u64_backend", "serde"] }
+bulletproofs = "4.0.0"
+merlin = "3.0.0"
+
+ct_crypto = {path = "../crypto"}
+ct_utils = {path = "../utils"}

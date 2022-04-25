@@ -1,0 +1,12 @@
+[package]
+name = "ct_mlsag"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+curve25519-dalek = { package = "curve25519-dalek-ng", version = "4" }
+sha3 = { version = "0.9.1", default-features = false }
+merlin = "3.0.0"
+ct_utils = {path = "../utils"}

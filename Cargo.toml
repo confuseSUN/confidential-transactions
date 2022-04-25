@@ -1,0 +1,10 @@
+[workspace]
+members = [
+    "test/confidential_transaction",
+     "test/ring_confidential_transaction",
+    "account",
+    "token",
+    "crypto",
+    "utils",
+    "mlsag"
+]
