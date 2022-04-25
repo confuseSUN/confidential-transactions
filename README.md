@@ -46,10 +46,8 @@ pederson commitment和证明能够证明输入和输出关系，相对于pederso
   
      
    ## demo2： 环机密性交易 （cargo run -p ring_confidential_transaction）
-  环机密性交易主要实现以下三个机密性：
-   1. 隐藏交易金额
-   2. 保护接收方地址  
-   3. 保护接收方地址
+   ![image](https://user-images.githubusercontent.com/39479965/165040493-9beb6d3a-2c36-4884-9132-65da711bd0ef.png)
+
    
    ### MLSAG：多层可链接环签名
    MLSAG是在LSAG基础上进行改进，目的是为了支持多输入。
