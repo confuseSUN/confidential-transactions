@@ -11,6 +11,7 @@ pub struct Signarute {
 
 impl Signarute {
     pub fn verify(&self, msg: &[u8]) -> bool {
+        assert!(self.s.len() > 1 && self.public_keys.len() > 1);
         let mut c_pai = self.c.clone();
         for (s_vec, pk_vec) in self.s.iter().zip(self.public_keys.iter()) {
             let mut transcript = Transcript::new(b"mlsag");
